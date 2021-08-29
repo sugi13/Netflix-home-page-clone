@@ -1,0 +1,297 @@
+body {
+    background-color: #000;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+}
+/* header */
+.logo {
+    width: 50%;
+}
+
+header {
+    width: 100%;
+    background-image: url(../images/Netflix-Background-prueba-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    height: 400px;
+    position: relative;
+    top: 20px;
+}
+
+
+#dropdown {
+    padding:5px;
+    align-items: center;
+    font-size:1rem;
+    background-color: #000;
+    color: #ffffff;
+    border: 1px solid white;
+}
+.signin a {
+    text-decoration: none;
+    color: white;
+    padding: 7px;
+    background-color: red;
+    border-radius: 5px;
+}
+/* header-end */
+aside {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    top: -100px;
+}
+.content-1 h1 {
+    font-size:4rem;
+}
+.content-1 p {
+    font-size: 1.5rem;
+    position: relative;
+    top: -20px;
+}
+input[type = 'email'] {
+    width: 50%;
+    font-size:1rem;
+    padding: 10px;
+}
+input[type = "submit"] {
+    padding: 12px;
+    font-size:1.2rem;
+    color: white;
+    background-color:#ff0000;
+    border: 2px solid white;
+    cursor: pointer;
+}
+input[type = 'email']:focus{
+    outline: none;
+}
+input[type = "submit"]:focus {
+    outline: none;
+}
+
+
+
+.container-1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+.content-wrapper h2{
+    font-size:3rem;
+}
+.content-wrapper p {
+    font-size:1.5rem;
+}
+.container-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.container-2 h2 {
+    font-size:3rem;
+}
+.container-2 p {
+    font-size: 1.5rem;
+}
+.container-3{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+.container-3 h2 {
+    font-size:3rem;
+}
+.container-3 p{
+    font-size: 1.5rem;
+}
+.container-4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.container-4 h2 {
+    font-size:3rem;
+}
+.container-4 p{
+    font-size: 1.5rem;
+}
+.query-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.query-container h1 {
+    font-size: 3.5rem;
+}
+.query-1 {
+    display: flex;
+    flex-direction: column;
+}
+.query-1 h2 {
+    border: 2px solid white;
+}
+.content {
+    display: none;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.accordion {
+    width: 50%;
+}
+.accordion-header {
+    margin: 10px;
+}
+.accordion-item {
+    background-color: rgb(77, 77, 77);
+}
+.accordion-button{
+    background-color: rgb(77, 77, 77);
+    color: white;
+    font-size: 1.6rem;
+}
+.accordion-body p {
+    font-size: 1.5rem;
+}
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+footer {
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    height: 400px;
+    align-items: center;
+}
+.question a {
+    text-decoration: none;
+    font-size:1rem;
+    color:rgb(77, 77, 77);
+}
+li  {
+    list-style-type: none;
+}
+li a {
+    text-decoration: none;
+    font-size:1rem;
+    color:rgb(77, 77, 77);
+}
+.footer-logo a {
+    text-decoration: none;
+    font-size:1rem;
+    color:rgb(77, 77, 77);
+}
+
+@media screen and (max-width: 576px) {
+img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+    }
+    #dropdown {
+        position: relative;
+        left: -20px;
+    }
+    .signin a {
+        font-size: .6rem;
+        padding: 10px;
+    }
+
+   aside {
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+   }
+   .content-1 h1 {
+    font-size:2rem;
+}
+.content-1 p {
+    position: relative;
+    top: 20px;
+}
+article h2 {
+    font-size:1rem;
+}
+ .container-1, .container-2, .container-3, .container-4 {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+ }
+ .container-1 h2 {
+     font-size: 1.7rem;
+ }
+ .container-1 p {
+     font-size: 1rem;
+ }
+ .container-2 h2 {
+    font-size: 1.7rem;
+ }
+ .container-2 p {
+     font-size:1rem;
+ }
+.container-3 h2 {
+    font-size: 1.7rem;
+}
+.container-3 p {
+    font-size: 1rem;
+}
+.container-4 h2 {
+    font-size:1.7rem;
+}
+.container-4 p {
+    font-size:1rem;
+}
+.accordion {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+}
+.accordion-header {
+    margin: 10px;
+}
+.accordion-item {
+    background-color: rgb(77, 77, 77);
+}
+.accordion-button{
+    background-color: rgb(77, 77, 77);
+    color: white;
+    font-size: 1.2rem;
+}
+.accordion-body p {
+    font-size: 1rem;
+}
+.services {
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+footer {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    height: 400px;
+    padding: 10px; 
+    position: relative;
+    top: 20px;
+}
+   
+}
